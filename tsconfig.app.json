@@ -22,5 +22,11 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "components/ui/card.tsx",
+    "components/ui/input.tsx",
+    "components/ui/label.tsx",
+    "components/JalaliDatePicker.tsx"
+  ]
 }
