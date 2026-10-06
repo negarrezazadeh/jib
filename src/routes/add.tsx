@@ -11,6 +11,7 @@ import {
   SelectValue,
 } from "../../components/ui/select";
 import { JalaliDatePicker } from "../../components/JalaliDatePicker";
+import { Button } from "../../components/ui/button";
 
 export const Route = createFileRoute("/add")({
   component: RouteComponent,
@@ -34,7 +35,7 @@ function RouteComponent() {
         <div className="space-y-2">
           <Label htmlFor="category">دسته بندی </Label>
           <Select items={categories}>
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger className="w-full" id="category">
               <SelectValue placeholder="انتخاب" />
             </SelectTrigger>
             <SelectContent>
@@ -64,6 +65,8 @@ function RouteComponent() {
             onChange={() => console.log("date :/")}
           />
         </div>
+
+        <Button className="text-white w-full mt-3">ثبت هزینه</Button>
       </form>
     </div>
   );
