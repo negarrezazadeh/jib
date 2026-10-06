@@ -11,9 +11,9 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-import { cn } from "../src/lib/utils";
-import { fromDateKey, toDateKey } from "../src/lib/date";
-import { JALALI_WEEKDAY_LABELS, getJalaliMonthGrid } from "../src/lib/jalali";
+import { cn } from "@/lib/utils";
+import { fromDateKey, toDateKey } from "@/lib/date";
+import { JALALI_WEEKDAY_LABELS, getJalaliMonthGrid } from "@/lib/jalali";
 import { Button } from "./ui/button";
 
 interface JalaliDatePickerProps {

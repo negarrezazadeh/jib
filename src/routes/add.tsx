@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Label } from "../../components/ui/label";
-import { Input } from "../../components/ui/input";
-import { Textarea } from "../../components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import {
   Select,
   SelectContent,
@@ -9,9 +9,9 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "../../components/ui/select";
-import { JalaliDatePicker } from "../../components/JalaliDatePicker";
-import { Button } from "../../components/ui/button";
+} from "@/components/ui/select";
+import { JalaliDatePicker } from "@/components/JalaliDatePicker";
+import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/add")({
   component: RouteComponent,
