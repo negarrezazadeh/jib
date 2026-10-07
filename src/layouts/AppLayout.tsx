@@ -25,12 +25,12 @@ export default function AppLayout({ children }: { children: ReactNode }) {
         </header>
 
         {/* page content */}
-        <main className="flex-1 overflow-y-auto p-4 md:p-6 space-y-4">
+        <main className="flex-1 overflow-y-auto p-4 md:p-6 space-y-4 bg-background">
           {children}
         </main>
 
         {/* mobile navbar */}
-        <nav className="md:hidden shrink-0 flex justify-around border-t border-border py-2 items-center">
+        <nav className="md:hidden bg-white shrink-0 flex justify-around border-t border-border py-2 items-center">
           {navItems.map((item) => (
             <Link
               key={item.to}
