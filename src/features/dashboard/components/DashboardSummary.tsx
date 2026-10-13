@@ -18,7 +18,7 @@ export default function DashboardSummary({
       <Card className={`${className} ring-0`}>
         <CardContent className="flex flex-col items-center">
           <p className="text-base font-black text-gray-600">{title}</p>
-          <p className="text-xl">{amount}</p>
+          <p className="text-xl">{amount.toLocaleString("fa-IR")}</p>
           <p className="text-base font-black text-gray-600">تومان</p>
         </CardContent>
       </Card>

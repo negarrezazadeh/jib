@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import DashboardSummary from "../features/dashboard/components/DashboardSummary";
-import TransactionCard from "@/features/transactions/TransactionSummary";
+import TransactionCard from "@/features/transactions/RecentTransactions";
 
 export const Route = createFileRoute("/")({
   component: RouteComponent,
