@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/select";
 import { JalaliDatePicker } from "@/components/JalaliDatePicker";
 import { Button } from "@/components/ui/button";
+import PageTitle from "@/components/PageTitle";
 
 export const Route = createFileRoute("/add")({
   component: RouteComponent,
@@ -25,7 +26,8 @@ function RouteComponent() {
     { label: "قسط", value: "qest" },
   ];
   return (
-    <div>
+    <>
+      <PageTitle title="ثبت هزینه" />
       <form className="space-y-5">
         <div className="space-y-2">
           <Label htmlFor="amount">مبلغ</Label>
@@ -68,6 +70,6 @@ function RouteComponent() {
 
         <Button className="text-white w-full mt-3">ثبت هزینه</Button>
       </form>
-    </div>
+    </>
   );
 }
